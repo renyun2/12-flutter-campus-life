@@ -1,0 +1,6 @@
+[
+  {"id":"m1","title":"九成新 iPad","price":1800,"category":"数码","description":"2022款，含原装笔","sellerName":"李四"},
+  {"id":"m2","title":"高等数学教材","price":25,"category":"书籍","description":"几乎全新","sellerName":"王五"},
+  {"id":"m3","title":"自行车","price":200,"category":"出行","description":"毕业出售","sellerName":"赵六"},
+  {"id":"m4","title":"台灯","price":30,"category":"生活","description":"LED护眼灯","sellerName":"张三"}
+]

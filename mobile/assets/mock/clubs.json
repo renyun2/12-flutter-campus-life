@@ -1,0 +1,5 @@
+[
+  {"id":"cl1","name":"编程马拉松","description":"24小时编程挑战，欢迎各院系同学参加","eventDate":"2025-06-15","location":"计楼大厅","maxMembers":30},
+  {"id":"cl2","name":"校园歌手大赛","description":"展示你的歌喉，赢取丰厚奖品","eventDate":"2025-06-20","location":"大礼堂","maxMembers":100},
+  {"id":"cl3","name":"篮球友谊赛","description":"院系间篮球对抗赛","eventDate":"2025-06-10","location":"体育馆","maxMembers":40}
+]

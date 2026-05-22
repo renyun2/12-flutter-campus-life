@@ -1,0 +1,13 @@
+[
+  {"id":"p1","name":"图书馆","lat":39.9042,"lng":116.4074,"description":"藏书百万册，自习首选"},
+  {"id":"p2","name":"第一食堂","lat":39.905,"lng":116.408,"description":"品种丰富，价格实惠"},
+  {"id":"p3","name":"体育馆","lat":39.9035,"lng":116.4065,"description":"篮球、羽毛球、游泳"},
+  {"id":"p4","name":"教学楼A","lat":39.9048,"lng":116.406,"description":"主要理论课教室"},
+  {"id":"p5","name":"计楼","lat":39.9055,"lng":116.407,"description":"计算机学院所在地"},
+  {"id":"p6","name":"宿舍区","lat":39.903,"lng":116.409,"description":"学生生活区"},
+  {"id":"p7","name":"校医院","lat":39.904,"lng":116.4055,"description":"医疗服务"},
+  {"id":"p8","name":"大礼堂","lat":39.9058,"lng":116.4068,"description":"大型活动场地"},
+  {"id":"p9","name":"实验楼","lat":39.9045,"lng":116.4085,"description":"理工科实验"},
+  {"id":"p10","name":"南门","lat":39.9028,"lng":116.4072,"description":"学校主入口"},
+  {"id":"p11","name":"超市","lat":39.9038,"lng":116.4082,"description":"日用品购物"}
+]

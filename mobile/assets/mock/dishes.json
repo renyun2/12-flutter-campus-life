@@ -1,0 +1,7 @@
+[
+  {"id":"d1","canteenId":"ct1","name":"红烧肉套餐","price":12,"nutrition":{"calories":650,"protein":"25g"},"rating":4.5,"description":"经典菜品"},
+  {"id":"d2","canteenId":"ct1","name":"番茄炒蛋","price":8,"nutrition":{"calories":320,"protein":"12g"},"rating":4.2,"description":""},
+  {"id":"d3","canteenId":"ct2","name":"麻辣香锅","price":18,"nutrition":{"calories":800,"protein":"30g"},"rating":4.6,"description":"可自选食材"},
+  {"id":"d4","canteenId":"ct2","name":"牛肉面","price":15,"nutrition":{"calories":550,"protein":"22g"},"rating":4.3,"description":""},
+  {"id":"d5","canteenId":"ct3","name":"兰州拉面","price":14,"nutrition":{"calories":480,"protein":"18g"},"rating":4.4,"description":""}
+]

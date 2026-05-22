@@ -1,0 +1,8 @@
+[
+  {"term":"2024-2025-1","courseName":"高等数学","score":88,"credit":4},
+  {"term":"2024-2025-1","courseName":"大学英语","score":92,"credit":3},
+  {"term":"2024-2025-1","courseName":"数据结构","score":85,"credit":4},
+  {"term":"2024-2025-1","courseName":"操作系统","score":90,"credit":3},
+  {"term":"2023-2024-2","courseName":"线性代数","score":86,"credit":3},
+  {"term":"2023-2024-2","courseName":"概率论","score":91,"credit":3}
+]

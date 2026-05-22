@@ -1,0 +1,16 @@
+**/.idea/
+**/*.iml
+**/node_modules/
+**/__pycache__/
+**/.pytest_cache/
+**/dist/
+**/.venv/
+**/.env
+**/.dart_tool/
+**/build/
+**/package-lock.json
+mobile/pubspec.lock
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+backend/data/*.db
+backend/data/*.db-*

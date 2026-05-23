@@ -17,11 +17,13 @@ class ApiException implements Exception {
 class ApiClient {
   ApiClient({http.Client? client, String? baseUrl})
       : _client = client ?? http.Client(),
-        _baseUrl = baseUrl ?? ApiConfig.baseUrl;
+        _baseUrlOverride = baseUrl;
 
   final http.Client _client;
-  final String _baseUrl;
+  final String? _baseUrlOverride;
   String? _token;
+
+  String get _baseUrl => _baseUrlOverride ?? ApiConfig.baseUrl;
 
   void setToken(String? token) => _token = token;
 
@@ -64,7 +66,14 @@ class ApiClient {
   }
 
   dynamic _decode(http.Response res) {
-    final data = res.body.isEmpty ? null : jsonDecode(res.body);
+    dynamic data;
+    if (res.body.isNotEmpty) {
+      try {
+        data = jsonDecode(res.body);
+      } catch (_) {
+        throw ApiException('响应不是有效 JSON (${res.statusCode})', statusCode: res.statusCode);
+      }
+    }
     if (res.statusCode >= 400) {
       final msg = data is Map ? (data['error'] as String?) : null;
       throw ApiException(msg ?? '请求失败 (${res.statusCode})', statusCode: res.statusCode);

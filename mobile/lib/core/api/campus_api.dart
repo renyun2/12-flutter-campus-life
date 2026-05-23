@@ -11,9 +11,17 @@ class CampusApi {
       'studentId': studentId,
       'password': password,
     });
+    if (data is! Map<String, dynamic>) {
+      throw ApiException('登录失败：后端未返回 JSON（请确认 API 地址与后端已启动）');
+    }
+    final token = data['token'];
+    final user = data['user'];
+    if (token is! String || user is! Map<String, dynamic>) {
+      throw ApiException('登录失败：响应缺少 token 或 user');
+    }
     return LoginResult(
-      token: data['token'] as String,
-      user: UserModel.fromJson(data['user'] as Map<String, dynamic>),
+      token: token,
+      user: UserModel.fromJson(user),
     );
   }
 

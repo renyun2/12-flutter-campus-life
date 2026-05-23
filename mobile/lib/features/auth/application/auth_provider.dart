@@ -21,11 +21,14 @@ class AuthNotifier extends Notifier<AuthState?> {
     final token = box.get('token');
     final raw = box.get('user');
     if (token != null && raw != null) {
-      ref.read(apiClientProvider).setToken(token);
-      return AuthState(
-        token: token,
-        user: UserModel.fromJson(jsonDecode(raw) as Map<String, dynamic>),
-      );
+      try {
+        final user = UserModel.fromJson(jsonDecode(raw) as Map<String, dynamic>);
+        ref.read(apiClientProvider).setToken(token);
+        return AuthState(token: token, user: user);
+      } catch (_) {
+        box.clear();
+        ref.read(apiClientProvider).setToken(null);
+      }
     }
     return null;
   }
